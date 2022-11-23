@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.padx1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mt{
+  margin-top: 2rem;
+}
+
+.mb{
+  margin-bottom: 1rem;
+}
+
+.fz20{
+  font-size: 20px;
+}
+
+.todo label{
+  cursor: pointer; 
+}
+
+.todo.completed span{
+  text-decoration: line-through;
+}
+
+.label_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
