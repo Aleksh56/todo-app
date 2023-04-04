@@ -18,7 +18,7 @@ const Main: React.FC = () => {
 
     const handleToDoAdd = (title:string) => {
         const newToDo: IToDo = {
-            title: title,
+            title,
             id: Date.now(),
             completed: false
         }
@@ -28,7 +28,7 @@ const Main: React.FC = () => {
     const toggledHandler = (id: number) => {
         setTodos(prev => prev.map(todo => {
             if(todo.id === id){
-                todo.completed = !todo.completed
+                return {...todo, completed: !todo.completed}
             }
             return todo
         }))
